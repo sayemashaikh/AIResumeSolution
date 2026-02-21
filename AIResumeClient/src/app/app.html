@@ -1,0 +1,7 @@
+<h2>Weather Data</h2>
+
+<div *ngIf="weatherData">
+  <div *ngFor="let item of weatherData">
+    <p>{{ item.date }} - {{ item.temperatureC }}°C - {{ item.summary }}</p>
+  </div>
+</div>
